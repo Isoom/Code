@@ -1,0 +1,628 @@
+/* 
+Stilmall - CSS
+Website: Aichi
+*/
+
+
+/* ######### Dropdown menu ######### */
+
+/* drop down class */
+.dropdown{
+	display: inline-block;
+}
+
+/* Button for the drop menu */
+.dropdown button {
+	display: none;
+	background-color: rgb(227, 51, 51);
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+}
+
+/* style for the text in the drop menu */
+.dropdown a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* style for the content in the dropdown menu */
+.dropdown .content{
+	display: none;
+	position: absolute;
+	top: 72px;
+	right: 30px;
+	background-color: rgb(217, 208, 186);
+	min-width: 100px;
+	box-shadow: 2px 2px 5px black;
+
+}
+
+/* hovering function for the drop down menu, in content "box" */
+.dropdown:hover .content{
+	display: block;
+
+	/* change the position for the drop down box */
+	z-index: 100;
+}
+
+/* hovering function for the drop down button */
+.dropdown:hover button{
+	background-color: black;
+}
+
+/* hovering function for the text - drop menu */
+.dropdown a:hover{
+	background-color: #cf222c;
+}
+
+
+
+/* styling of the button class for the drop down menu */
+.btn {
+	background-color: DodgerBlue; /* Blue background */
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	padding: 12px 16px; /* Some padding */
+	font-size: 16px; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+}
+      
+/* hovering function for the button - drop menu */
+ .btn:hover {
+	background-color: RoyalBlue;
+}
+
+/* ######### # ######### */
+
+
+/* ######### Style on the whole website ######### */
+
+/* Font for the website */
+* {
+	font-family: "Manrope", sans-serif;
+}
+
+h2,p {
+	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	padding-left: 12px;
+	padding-right: 12px;
+
+}
+
+/* background - no bambu */
+body {
+	background-image: url("images/clean_bakgrund.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin: 0;
+}
+
+/* background - bambu */
+.body-bambu {
+	background-image: url("images/1920MENY.jpg");
+	background-position: center;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	height: 100vh;
+}
+
+/* on every site except index.html */
+.back-button {
+	top: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+}
+
+
+/* ######### # ######### */
+
+
+
+
+
+
+
+
+/* ######### General styling ######### */
+
+
+/* #### index.html styling #### */
+
+/* style for the logo and title, (a box)*/
+.menuBox{
+	width: auto;
+}
+
+/* link style for the start menu */
+.link-meny {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	margin: 40px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* style logo on the start menu */
+
+.logo{
+	margin-top: 100px;
+}
+
+/* titel style för desktop meny */
+.menuTitle {
+	height: auto;
+	width: auto;
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	bottom: 55px;
+}
+
+/* start menu navigation */
+.menu-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	background-color: rgba(213, 202, 173, 0.601);
+	column-gap: 20px;
+	font-size: 20px;
+	margin-top: 0px;
+	width: 100%;
+	height: 12%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+/* hovering function for the navigtion bar */
+.menu-container > div:hover {
+	background-color: rgba(0, 0, 0, 0.117);
+}
+
+/* REMOVE? */
+.menu-container > div {
+	display: flex;
+}
+
+/* #### # #### */
+
+
+
+/* #### kontakt.html styling #### */
+
+/* google maps (icon) */
+.map-icon {
+	opacity: 1;
+	align-content: center;
+	height: 50px;
+}
+
+/* (Box) for the google maps icon and link */
+.box-mapIcon-link {
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+/* styling for address title */
+.address-title {
+	height: auto;
+	width: auto;
+	text-align: center;
+	font-size: 21px;
+
+}
+
+/* box for contact and address */
+.box-contact-adress {
+	width: 780px;
+	height: auto;
+}
+
+
+/* (box) for phone-mail and address-maps */
+.box-phone-mail,
+.box-address-maps {
+	width: auto;
+	height: auto;
+	
+}
+
+
+/* link style for the map-link */
+.link-map {
+	color: black;
+	text-align: center;
+	height: 20px;	
+}
+
+/* (box-class) style for phone and number */
+.phone-number {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	height: 38px;
+}
+
+/* styling for address text */
+.addressText {
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: 38px;
+}
+
+
+/* (box-class) style for email and address */
+.email-address, .date-time{
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	height: 38px;
+	margin-top: 40px;
+
+}
+
+
+/* #### # #### */
+
+
+
+/* #### meny.html styling #### */
+
+.food-category-title {
+	height: auto;
+	width: auto;
+	background-color: #cf222c;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* name and price text styling */
+.name-price {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	height: 30px;
+	margin-bottom: 16px;
+}
+
+.doubleMenu {
+	height: auto;
+}
+
+.menuGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+
+}
+
+/* #### # #### */
+
+
+
+
+/* #### bilder.html styling #### */
+
+.sushi-sub-title {
+	height: auto;
+	width: auto;
+	text-align: center;
+	font-size: 21px;
+
+}
+
+/* (box) for pictures (sushi) */
+.imageSushi {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.bilderGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+/* #### # #### */
+
+
+
+
+/* #### tider.html styling #### */
+
+/* the whole box for the content */
+.box-day-time {
+	width: 780px;
+	height: auto;
+}
+
+.ordinary-deviant-title {
+	height: auto;
+	width: auto;
+	background-color: #cf222c;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* (box-class) style for phone and number */
+.day-time {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	margin-top: 10px;
+}
+
+/* #### # #### */
+
+
+
+/* #### dagens.html styling #### */
+
+/* see code: name-price for styling of name and pricing*/
+
+.background-lunch-box {
+	background-color: rgba(142, 142, 142, 0.254);
+	width: auto;
+	height: auto;
+	padding: 14px;
+}
+
+.weekday-title {
+	height: auto;
+	width: auto;
+	background-color: #cf222c;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.dagensGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr  1fr;
+	column-gap: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+
+}
+
+/* #### # #### */
+
+
+
+
+/* #### extra.html styling #### */
+
+.extraGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.eForm-container, 
+.table-container, 
+.video-container,
+.list-container{
+	border-style: solid;
+}
+
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+      
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+      
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+/* #### # #### */
+
+
+/* ######### end of general styling ######### */
+
+
+
+
+/* On screens that are 1300px or less */
+@media (max-width: 1300px) {
+	.dagensGrid{
+		grid-template-columns: 1fr 1fr;
+		margin-left: 30px;
+		margin-right: 30px;
+		column-gap: 30px;
+	}
+
+	.extraGrid{
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 30px;
+		row-gap: 30px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+}
+
+
+@media (max-width: 1150px) {
+/* styling for dropdown button */
+	.dropdown button {
+		display: block;
+		top: 30px;
+		right: 30px;
+		background-color: #cf222c;
+		color: white;
+		padding: 10px 15px;
+		border: none;
+		cursor: pointer;
+		position: fixed;
+	}
+
+	/* removes the start menu when screen is too small */
+	.menu-container {
+		display: none;
+	}
+}
+
+
+/* On screens that are 1000px or less */
+@media (max-width: 1000px) {
+
+	.bilderGrid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 30px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	.menuGrid{
+		grid-template-columns: 1fr 1fr;
+		margin-left: 30px;
+		margin-right: 30px;
+		column-gap: 30px;
+	}
+
+
+	/* changes the logo size */
+	.logo{
+		margin-top: 90px;
+		scale: 65%;
+	}
+
+
+	/* style the title for the phone size */
+	.menuTitle {
+		font-size: 20px;
+	}
+
+	/* iphone menu no bambu */
+	body {
+		background-image: url("images/iphoneBakgrund.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0;
+		width: 100%;
+		height: 100vh;
+	}
+	/* iphone menu with bambu */
+	.body-bambu {
+		background-image: url("images/iphoneBakgrund2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0;
+		width: 100%;
+		height: 100vh;
+	}
+
+
+	.back-button {
+		scale: 75%;
+
+	}
+
+	.phone-number{
+		display: flex;
+		justify-content: space-between;
+		width: auto;
+		height: 38px;
+
+	}
+
+	.addressText{
+		display: flex;
+		width: auto;
+		height: 38px;
+	}
+
+	/* extends the background image */
+	body {
+		background-repeat: repeat-y;
+	}
+}
+
+/* On screens that are 700 or less */
+@media (max-width: 700px) {
+
+	/* resize grid */
+
+	.menuGrid{
+		grid-template-columns: 1fr;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.dagensGrid{
+		grid-template-columns: 1fr;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	/* extends the background image */
+	body {
+		background-repeat: repeat-y;
+	}
+
+}
+
+/* things to remove when printing html slides */
+@media print{
+	.back-button{
+		display: none;
+	}
+}
+
