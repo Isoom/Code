@@ -437,6 +437,12 @@ body {
 
 /* #### extra.html styling #### */
 
+/* styling för task 1 */
+.message {
+        display: none;
+}
+
+
 .extraGrid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
