@@ -1,4 +1,5 @@
 /styling för task 1/ 
+
 function onButtonClick() {
 	alert('Hello, JavaScript!');
 }
