@@ -27,8 +27,6 @@ Website: Aichi
 	position: relative;
 	display: inline-block;
 	margin-right: 10px;
-	
-
 }
       
 /* Dropdown Content (Hidden by Default) */
@@ -117,6 +115,7 @@ Website: Aichi
 }
 
 /* hovering function for the text - drop menu */
+/* detta ska bytas ut med java script onmouseover typ? */
 .dropdown a:hover{
 	background-color: #cf222c;
 }
@@ -219,6 +218,32 @@ body {
 
 /* #### index.html styling #### */
 
+
+/* jQuery saker */
+
+
+
+
+
+#panel, #flip {
+	text-align: center;
+	cursor: pointer;
+}
+      
+#panel {
+	display: none;
+}
+
+
+
+
+
+
+/* slutet av jQuery */
+
+
+
+
 /* style for the logo and title, (a box)*/
 .menuBox{
 	width: auto;
@@ -266,16 +291,6 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 
-}
-
-/* hovering function for the navigtion bar */
-.menu-container > div:hover {
-	background-color: rgba(0, 0, 0, 0.117);
-}
-
-/* REMOVE? */
-.menu-container > div {
-	display: flex;
 }
 
 /* #### # #### */
@@ -492,9 +507,6 @@ body {
 	from {opacity: 0.7}
 	to {opacity: 1;}
 }
-
-
-
 
 
 

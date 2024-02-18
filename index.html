@@ -9,6 +9,7 @@
 		<link href="meny.css" type="text/css" rel="stylesheet"></link>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 
 	<!-- background with no bambu -->
@@ -22,7 +23,7 @@
 					<!-- the button for the dropdown menu -->
 					<button class="btn"><i class="fa fa-bars"></i></button>
 					<div class="content">
-						<a href="meny.html">MENY</a>
+						<a href="meny.html">MENY</a> 
 						<a href="bilder.html">BILDER</a>
 						<a href="tider.html">TIDER</a>
 						<a href="kontakt.html">KONTAKT</a>
@@ -31,19 +32,27 @@
 						<a href="slide.html">SLIDE</a>
 					</div>
 				</div>
+			
 				
 				<!-- menu for the desktop size -->
 				<div class="menu-container">
-					<div><a href="meny.html" class="link-meny"><h2 class="h2">MENY</h2> </a></div>
+					<!-- <div><a href="meny.html" class="link-meny"><h2 class="h2">MENY</h2> </a></div> ska göra en ny variant på menyn..-->
+
+					<div class="desktop-dropdown-container">
+						<div id="flip"><a class="link-meny"><h2 class="h2">MENY</h2></a></div>
+						<div class="desktop-dropdownMenu">
+							<div id="panel"><a href="dagens.html"class="link-meny"><h2 class="h2">DAGENS LUNCH</h2></a>
+									<a href="meny.html"class="link-meny"><h2 class="h2">MENY</h2></a></div>
+						</div>
+					</div>
 					<div><a href="bilder.html" class="link-meny"><h2 class="h2">BILDER</h2></a></div>
 					<div><a href="tider.html"class="link-meny"><h2 class="h2">TIDER</h2></a></div>
 					<div><a href="kontakt.html"class="link-meny"><h2 class="h2">KONTAKT</h2></a></div>
-					<div><a href="dagens.html"class="link-meny"><h2 class="h2">DAGENS</h2></a></div>
 					<div><a href="extra.html"class="link-meny"><h2 class="h2">EXTRA</h2></a></div>
 					<div><a href="slide.html"class="link-meny"><h2 class="h2">SLIDE</h2></a></div>
 				</div>
 		
-	
+	 
 			</header>
 
 			<main>
@@ -67,6 +76,11 @@
 			<footer>
 
 			</footer>
+
+			<script src="script2.js"></script>
+			<script src="script.js"></script>
+			<script src="script3.js"></script>
+
 
 		</div>
 
