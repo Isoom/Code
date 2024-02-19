@@ -426,13 +426,6 @@ body {
 
 }
 
-/* (box) for pictures (sushi) */
-.imageSushi {
-	width: 100%;
-	display: flex;
-	align-items: center;
-
-}
 
 /* (box) for pictures (sushi) */
 .imageSushiSlide {
@@ -440,9 +433,6 @@ body {
 	display: flex;
 	align-items: center;
 }
-
-
-
 
 
 /* här är styling för slideshow */
