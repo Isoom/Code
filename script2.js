@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Lägger till stil för när man hovrar över länken
 	function addHoverStyle() {
 	    	this.style.color = '#000000';
-		this.style.textDecoration = "underLine"
+		this.style.textDecoration = "overLine"
 		// ändrade till detta för att jag tycker det va snyggare :)
 	}
     
